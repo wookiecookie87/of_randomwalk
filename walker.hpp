@@ -17,12 +17,12 @@ class Walker {
 public:
     Walker();
     ~Walker();
-    
-    int x;
-    int y;
-    
     void display();
     void step();
-    
-    ofMesh mesh;
+private:
+    int x;
+    int y;
+    std::deque<ofPoint> pointLogs;
 };
+
+
